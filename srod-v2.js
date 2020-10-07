@@ -3,7 +3,7 @@ const Joker = require('one-liner-joke');
 const { Error } = require("./Src/functions.js");
 
 module.exports = {
-    Hastebin: async function (String, EmbedColor) {
+    Hastebin: async (String, EmbedColor) => {
         if (!String) return Error(`Please Give Something As Data!`);
         if (String.length > 1500) return Error("String Length Limit - 1500");
 
